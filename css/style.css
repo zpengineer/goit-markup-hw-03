@@ -1,0 +1,184 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --white-color: #fff;
+  --black-color: #000;
+  --section-bg-color: #2f303a;
+  --button-bg-color: #f5f4fa;
+  --footer-link-color: rgba(255, 255, 255, 0.6);
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+
+  background-color: var(--white-color);
+  color: var(--primary-text-color);
+}
+/* Стили шапки сайта */
+.header-logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--black-color);
+  text-decoration: none;
+}
+.logo-text {
+  color: var(--accent-color);
+}
+.lists {
+  list-style: none;
+}
+.site-nav a {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--title-text-color);
+}
+.site-nav a:hover,
+.site-nav a:focus {
+  color: var(--accent-color);
+}
+a[href^='mailto'],
+a[href^='tel'] {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+a[href^='mailto']:hover,
+a[href^='tel']:hover {
+  color: var(--accent-color);
+}
+a[href^='mailto']:focus,
+a[href^='tel']:focus {
+  color: var(--accent-color);
+}
+/* Стили подвала сайта */
+.footer {
+  background-color: var(--section-bg-color);
+}
+.footer-logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+  text-decoration: none;
+}
+.footer-contacts p {
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+  margin: 0;
+}
+.footer-contacts a {
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer-link-color);
+}
+/* Стили секции герой */
+.section-hero {
+  background-color: var(--section-bg-color);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--white-color);
+}
+/* Стили секции преимуществ */
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--title-text-color);
+}
+.advantage-cards h3 {
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+.advantage-cards p {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+/* Стили секции рода деятельности */
+/* Стили секции команды */
+.team-cards h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.team-cards p {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+/* Страница портфолио */
+
+/* Стили секции примера работ */
+.portfolio-cards h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+.portfolio-cards p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+
+/* Кнопки */
+.button {
+  background-color: var(--button-bg-color);
+  color: var(--title-text-color);
+  font-family: inherit;
+}
+.button.primary {
+  background-color: var(--button-bg-color);
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+.button.primary:hover,
+.button.primary:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+.button.secondary {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+.button.secondary:hover,
+.button.secondary:focus {
+  background-color: var(--button-bg-color);
+  color: var(--title-text-color);
+}
