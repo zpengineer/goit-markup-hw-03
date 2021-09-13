@@ -7,7 +7,8 @@
   --section-bg-color: #2f303a;
   --button-bg-color: #f5f4fa;
   --footer-link-color: rgba(255, 255, 255, 0.6);
-  --border-color: #eeeeee;
+  --card-border-color: #eeeeee;
+  --header-border-color: #ececec;
   --card-set-gap: 30px;
 }
 body {
@@ -43,17 +44,25 @@ img {
 
   /* border: 2px solid red; */
 }
+
 /* Стили секций */
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
 
   /* outline: 2px solid orchid; */
 }
+
 .section.secondary {
   padding-top: 0;
 }
+
 /* Стили шапки сайта */
+
+.page-header {
+  border-bottom: 1px solid var(--header-border-color);
+}
 
 .main-nav {
   display: flex;
@@ -350,7 +359,7 @@ a[href^='tel']:focus {
 }
 
 .portfolio-cards li {
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--card-border-color);
 }
 
 .portfolio-cards a {
