@@ -6,10 +6,14 @@
   --black-color: #000;
   --section-bg-color: #2f303a;
   --button-bg-color: #f5f4fa;
+  --button-secondary-bg-color: #188CE8;
   --footer-link-color: rgba(255, 255, 255, 0.6);
   --border-color: #eeeeee;
+  --card-shadow: 0px 1px 1px rgba(0,0,0,0.12), 0px 1px 1px rgba(0,0,0,0.14), 0px 2px 1px rgba(0,0,0,0.2);
+  --card-radius: 0px 0px 4px 4px;
   --card-set-gap: 30px;
 }
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -17,6 +21,7 @@ body {
   background-color: var(--white-color);
   color: var(--primary-text-color);
 }
+
 img {
   display: block;
   max-width: 100%;
@@ -55,6 +60,10 @@ img {
 
 .section.secondary {
   padding-top: 0;
+}
+
+.section.team{
+  background-color: var(--button-bg-color);
 }
 
 /* Стили шапки сайта */
@@ -295,6 +304,11 @@ a[href^='tel']:focus {
   flex-basis: calc(100% / 4 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
+  
+  box-shadow: var(--card-shadow);
+  border-radius: var(--card-radius);
+  
+  background-color: var(--white-color);
 
   /* outline: 2px solid green; */
 }
@@ -360,7 +374,7 @@ a[href^='tel']:focus {
 }
 
 .portfolio-cards li {
-  border-bottom: 1px solid var(--border-color);
+  box-shadow: var(--card-shadow);
 }
 
 .portfolio-cards a {
@@ -370,6 +384,8 @@ a[href^='tel']:focus {
 .portfolio-cards .card-content {
   padding: 20px 24px 20px 24px;
   text-align: left;
+  
+  border: 0 1px 1px 1px solid var(--border-color);
 }
 
 .card-heading {
@@ -439,6 +455,5 @@ a[href^='tel']:focus {
 }
 .button.secondary:hover,
 .button.secondary:focus {
-  background-color: var(--button-bg-color);
-  color: var(--title-text-color);
+  background-color: var(--button-secondary-bg-color);
 }
