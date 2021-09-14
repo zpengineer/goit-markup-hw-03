@@ -193,6 +193,8 @@ a[href^='tel']:focus {
 /* Стили секции герой */
 
 .section-hero {
+  padding: 200px 0px;
+  
   background-color: var(--section-bg-color);
 
   text-align: center;
