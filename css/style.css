@@ -375,6 +375,7 @@ a[href^='tel']:focus {
 
 .portfolio-cards li {
   box-shadow: var(--card-shadow);
+  border-radius: var(--card-radius);
 }
 
 .portfolio-cards a {
